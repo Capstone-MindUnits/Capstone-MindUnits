@@ -1,12 +1,14 @@
 import React from 'react'
+import StarsRating from './StarsRating'
 
 function StarChart() {
     return (
-        <div className="w-1/4" style={{
-            float: 'left',
-            top: '372px',
-            position: 'absolute'
-        }}>
+        <div className="w-1/4" style={{ float: 'left', top: '372px', position: 'absolute' }}>
+            <div className=''>
+                <StarsRating />
+            </div>
+
+            <p>100% of reviews recommend this product</p>
             <div className="w-1/4">
                 <u>
                     5 stars
@@ -59,7 +61,6 @@ function StarChart() {
                     </div>
                 </div>
             </div>
-
         </div>
     )
 }

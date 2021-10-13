@@ -7,6 +7,8 @@ function App() {
   return (
     <div className="App">
       <p className='text-black-600'>RATING & REVIEWS</p>
+
+
       <ReviewList />
     </div>
 
