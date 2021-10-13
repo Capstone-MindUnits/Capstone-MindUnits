@@ -7,3 +7,13 @@
 #left-side-stars {
   float: right;
 }
+@-ms-viewport {
+  width: device-width;
+}
+
+.line {
+  width: 25%;
+  height: 47px;
+  border-bottom: 1px solid black;
+  position: absolute;
+}

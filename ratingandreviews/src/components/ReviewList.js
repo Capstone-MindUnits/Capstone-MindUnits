@@ -17,23 +17,22 @@ function ReviewList() {
                         <div className='review-summary'>
                             <p> <b>review summary</b></p>
                         </div>
-                        <div className='review-body'>
+                        <div className='flex'>
                             to use cloudinary for the review body so i can upload images
                         </div>
 
                     </div>
 
+                    <div className='line' >
+                    </div>
                 </div>
             </div>
+            <StarChart />
 
 
-            <br></br>
-            <br></br>
 
 
-            <div >
-                <StarChart />
-            </div>
+
 
 
         </div>
