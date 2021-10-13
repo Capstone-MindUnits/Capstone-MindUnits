@@ -2,6 +2,7 @@ import React from 'react'
 import Header from './Header'
 import StarChart from './StarChart'
 import StarsRating from './StarsRating'
+import ButtonsComp from './ButtonsComp'
 
 function ReviewList() {
     return (
@@ -32,7 +33,7 @@ function ReviewList() {
 
 
 
-
+            <ButtonsComp />
 
 
         </div>
