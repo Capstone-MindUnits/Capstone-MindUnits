@@ -3,62 +3,28 @@ import StarsRating from './StarsRating'
 
 function StarChart() {
     return (
-        <div>
-            <p>100% of reviews recommend this product</p>
-            <div className='flex' >
-                <u>
-                    5 stars
-                </u>
-                <div className="overflow-hidden h-3 mb-4 flex  " >
-                    <div style={{ width: 20 }}
-                        className=" flex flex-col text-center whitespace-nowrap text-white justify-center bg-green-900">
-                    </div>
+        <div className="grid grid-cols-3 gap-4">
+            <div className="col-span-3 ...">100% of reviews recommended this product</div>
 
-                </div>
-            </div>
-            <div className='flex'>
-                <u>
-                    4 stars
-                </u>
-                <div className="overflow-hidden h-3 mb-4 flex ">
-                    <div style={{ width: 20 }}
-                        className=" flex flex-col text-center whitespace-nowrap text-white justify-center bg-green-900">
-                    </div>
-                </div>
-            </div>
-            <div className='flex'>
-                <u>
-                    3 stars
-                </u>
-                <div className="overflow-hidden h-3 mb-4 flex " style={{ width: 50 }}>
-                    <div style={{ width: 20 }}
-                        className=" flex flex-col text-center whitespace-nowrap text-white justify-center bg-green-900">
-                    </div>
-                </div>
-            </div>
-            <div className='flex' >
-                <u>
-                    2 stars
-                </u>
-                <div className="overflow-hidden h-3 mb-4 flex ">
-                    <div style={{ width: 20 }}
-                        className=" flex flex-col text-center whitespace-nowrap text-white justify-center bg-green-900">
-                    </div>
+            <div className="...">3</div>
+            <div className="col-span-2 ...">4</div>
 
-                </div>
-            </div>
-            <div className='flex'>
-                <p>
-                    1 star
-                </p>
-                <div className="overflow-hidden h-3 mb-4 flex ">
+            <div className="...">5</div>
+            <div className="col-span-2 ...">6</div>
 
-                    <div style={{ width: 20 }}
-                        className=" flex flex-col text-center whitespace-nowrap text-white justify-center bg-green-900">
-                    </div>
-                </div>
-            </div>
+            <div className="...">7</div>
+            <div className="col-span-2 ...">8</div>
+
+            <div className="...">9</div>
+            <div className="col-span-2 ...">10</div>
+
+            <div className="...">11</div>
+            <div className="col-span-2 ...">12</div>
+
+
+
         </div>
+
     )
 }
 
