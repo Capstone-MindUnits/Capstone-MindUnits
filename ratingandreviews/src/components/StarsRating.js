@@ -2,7 +2,7 @@ import React from 'react'
 
 function StarsRating() {
     return (
-        <div>
+        <div >
             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
             <ul className="flex ">
                 <li>

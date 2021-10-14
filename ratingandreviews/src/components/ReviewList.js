@@ -10,19 +10,27 @@ function ReviewList() {
             <div  >
                 <div className='review-container'>
                     <div className='star-rating'>
-                        <div >
-                            User1234, January 1,2019
+                        <div className='flex' >
+                            <StarsRating />
+                            <p>
+                                User1234, January 1,2019
+                            </p>
                         </div>
-                        <StarsRating />
                         <div>
                             <p className='review-summary'> <b>review summary</b></p>
                         </div>
                         <div>
                             <p>Our mission: to help people learn to code for free. We accomplish this by creating thousands of videos, articles, and interactive coding lessons - all freely available to the public. We also have thousands of freeCodeCamp study groups around the world.</p>
                         </div>
-                        <div>
-  
-                            I recommend this product</div>
+                        <p className='flex'>
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                            </svg>
+                            I recommend this product
+
+                        </p>
+
+
                         <div><b>Response:</b>
                             <p>Marzipan danish jelly beans gummy bears apple pie cheescake topping biscuit sesame snaps</p>
                         </div>
@@ -50,7 +58,7 @@ function ReviewList() {
 
 
 
-        </div>
+        </div >
     )
 }
 
