@@ -5,7 +5,10 @@ module.exports = {
     extend: {},
   },
   variants: {
-    extend: {},
+    extend: {
+      overflow: ['hover', 'focus'],
+      overscrollBehavior: ['hover', 'focus']
+    },
   },
   plugins: [],
-} 
+}

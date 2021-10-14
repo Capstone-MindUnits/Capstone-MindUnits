@@ -28,9 +28,9 @@ function App() {
       <div className="...">
         <StarChart />
       </div>
-      <div className="col-span-2 ... mt-2">
+      <div className="col-span-2 ... mt-2 overscroll-y-contain">
         <ReviewList />
-        <ReviewList />
+
 
       </div>
       <div className="...">5
@@ -38,7 +38,7 @@ function App() {
       <div className="col-span-2 ...">
         <ButtonsComp />
       </div>
-    </div>
+    </div >
 
   );
 }
