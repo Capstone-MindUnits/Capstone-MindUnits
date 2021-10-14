@@ -18,7 +18,7 @@ import NumberStars from './components/NumberStars';
 function App() {
   return (
     // <p className='text-black-600'>RATING & REVIEWS</p>
-        <div className="grid grid-cols-3 gap-6  w-3/5  mx-auto text-gray-600">
+    <div className="grid grid-cols-3 gap-6  w-3/5  mx-auto text-gray-600 text-xs">
       <div className="...">
         <NumberStars />
       </div>
