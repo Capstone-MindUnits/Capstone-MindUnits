@@ -20,6 +20,13 @@ function ReviewList() {
                         <div>
                             <p>Our mission: to help people learn to code for free. We accomplish this by creating thousands of videos, articles, and interactive coding lessons - all freely available to the public. We also have thousands of freeCodeCamp study groups around the world.</p>
                         </div>
+                        <div>
+  
+                            I recommend this product</div>
+                        <div><b>Response:</b>
+                            <p>Marzipan danish jelly beans gummy bears apple pie cheescake topping biscuit sesame snaps</p>
+                        </div>
+
                         <div className="details mt-2 flex ">
                             <p className=" mr-4 text-gray-600">
                                 Helpful?
