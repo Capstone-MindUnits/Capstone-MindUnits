@@ -3,9 +3,10 @@ import React from 'react'
 function NumberStars() {
     return (
         <div>
+            <p>RATING & REVIEWS</p>
             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
 
-            <ul className="flex ">
+            <ul className="flex mt-4">
                 <p className="text-6xl  ordinal ...">2</p>
                 <li>
                     <i className="fas fa-star fa-sm text-black-500 mr-1"></i>
