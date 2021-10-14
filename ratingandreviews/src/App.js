@@ -20,7 +20,6 @@ function App() {
     // <p className='text-black-600'>RATING & REVIEWS</p>
     <div className="grid grid-cols-3 gap-6  w-3/5  mx-auto my-16">
       <div className="...">
-
         <NumberStars />
       </div>
       <div className="col-span-2 ...">

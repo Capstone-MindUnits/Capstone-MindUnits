@@ -10,11 +10,9 @@ function ReviewList() {
             <div  >
                 <div className='review-container'>
                     <div className='star-rating'>
-                        <div className='flex' >
+                        <div  >
                             <StarsRating />
-                            <p className='ml-96'>
-                                User1234, January 1,2019
-                            </p>
+
                         </div>
                         <div>
                             <p className='review-summary'> <b>review summary</b></p>
