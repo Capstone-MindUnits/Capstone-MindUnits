@@ -5,7 +5,7 @@ function StarChart() {
     return (
         <div>
             <p>100% of reviews recommend this product</p>
-            <div >
+            <div className='flex' >
                 <u>
                     5 stars
                 </u>
@@ -16,7 +16,7 @@ function StarChart() {
 
                 </div>
             </div>
-            <div >
+            <div className='flex'>
                 <u>
                     4 stars
                 </u>
@@ -26,7 +26,7 @@ function StarChart() {
                     </div>
                 </div>
             </div>
-            <div >
+            <div className='flex'>
                 <u>
                     3 stars
                 </u>
@@ -36,7 +36,7 @@ function StarChart() {
                     </div>
                 </div>
             </div>
-            <div >
+            <div className='flex' >
                 <u>
                     2 stars
                 </u>
@@ -47,10 +47,10 @@ function StarChart() {
 
                 </div>
             </div>
-            <div  >
-                <u>
+            <div className='flex'>
+                <p>
                     1 star
-                </u>
+                </p>
                 <div className="overflow-hidden h-3 mb-4 flex ">
 
                     <div style={{ width: 20 }}

@@ -7,29 +7,35 @@ import StarChart from './components/StarChart';
 import NumberStars from './components/NumberStars';
 
 
+{/* <div className="app pr-16 pl-16">
+  <div className="grid grid-cols-1 gap-4  w-3/5  mx-auto">
+    <Search />
+    <Qna />
+    <Buttons />
+  </div>
+</div> */}
+
 function App() {
   return (
-    <div className="App">
-      <p className='text-black-600'>RATING & REVIEWS</p>
-      <div class="grid grid-cols-3 gap-6">
-        <div class="...">
-          
-          <NumberStars />
-        </div>
-        <div class="col-span-2 ...">
-          <Header />
-        </div>
-        <div class="...">
-          <StarChart />
-        </div>
-        <div class="col-span-2 ...">
-          <ReviewList />
-        </div>
-        <div class="...">5
-        </div>
-        <div class="col-span-2 ...">
-          <ButtonsComp />
-        </div>
+    // <p className='text-black-600'>RATING & REVIEWS</p>
+    <div className="grid grid-cols-3 gap-6  w-3/5  mx-auto my-16">
+      <div className="...">
+
+        <NumberStars />
+      </div>
+      <div className="col-span-2 ...">
+        <Header />
+      </div>
+      <div className="...">
+        <StarChart />
+      </div>
+      <div className="col-span-2 ...">
+        <ReviewList />
+      </div>
+      <div className="...">5
+      </div>
+      <div className="col-span-2 ...">
+        <ButtonsComp />
       </div>
     </div>
 

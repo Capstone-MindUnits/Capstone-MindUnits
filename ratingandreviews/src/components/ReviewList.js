@@ -12,7 +12,7 @@ function ReviewList() {
                     <div className='star-rating'>
                         <div className='flex' >
                             <StarsRating />
-                            <p>
+                            <p className='ml-96'>
                                 User1234, January 1,2019
                             </p>
                         </div>
