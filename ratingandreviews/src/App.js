@@ -18,7 +18,7 @@ import NumberStars from './components/NumberStars';
 function App() {
   return (
     // <p className='text-black-600'>RATING & REVIEWS</p>
-    <div className="grid grid-cols-3 gap-6  w-3/5  mx-auto my-16">
+    <div className="grid grid-cols-3 gap-6  w-3/5  mx-auto my-16 text-gray-600">
       <div className="...">
         <NumberStars />
       </div>
@@ -28,8 +28,10 @@ function App() {
       <div className="...">
         <StarChart />
       </div>
-      <div className="col-span-2 ...">
+      <div className="col-span-2 ... mt-2">
         <ReviewList />
+        <ReviewList />
+
       </div>
       <div className="...">5
       </div>
