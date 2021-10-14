@@ -2,9 +2,9 @@ import React from 'react'
 
 function ButtonsComp() {
     return (
-        <div style={{ float: 'right', border: 'thick' }}>
-            <button className='hover:bg-blue-700 text-black font-bold py-2 px-4 '>MORE REVIEWS</button>
-            <button className='hover:bg-blue-700 text-black font-bold py-2 px-4 '>ADD A REVIEW</button>
+        <div className='btn' style={{ float: 'right', border: 'thick' }}>
+            <button className='text-black font-semibold   py-3 px-6 border border-black '>MORE REVIEWS</button>
+            <button className='text-black font-semibold  py-3 px-6 border border-black '>ADD A REVIEW</button>
 
         </div>
     )
