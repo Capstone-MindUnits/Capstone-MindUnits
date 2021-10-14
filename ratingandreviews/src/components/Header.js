@@ -9,8 +9,6 @@ function Header() {
                 <option>helpful</option>
                 <option>newest</option>
             </select>
-            <br></br>
-            <br></br>
         </div>
     )
 }

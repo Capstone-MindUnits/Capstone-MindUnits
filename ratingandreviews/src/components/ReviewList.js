@@ -7,33 +7,40 @@ import ButtonsComp from './ButtonsComp'
 function ReviewList() {
     return (
         <div>
-            <div className='right-side' style={{ marginLeft: '500px' }} >
-                <Header />
+            <div  >
                 <div className='review-container'>
                     <div className='star-rating'>
-                        <div style={{ float: 'right' }}>
+                        <div >
                             User1234, January 1,2019
                         </div>
                         <StarsRating />
-                        <div className='review-summary'>
-                            <p> <b>review summary</b></p>
+                        <div>
+                            <p className='review-summary'> <b>review summary</b></p>
                         </div>
-                        <div className='flex'>
-                            to use cloudinary for the review body so i can upload images
+                        <div>
+                            <p>Our mission: to help people learn to code for free. We accomplish this by creating thousands of videos, articles, and interactive coding lessons - all freely available to the public. We also have thousands of freeCodeCamp study groups around the world.</p>
                         </div>
-
+                        <div className="details mt-2 flex ">
+                            <p className=" mr-4 text-gray-600">
+                                Helpful?
+                                <a href="#" className="underline ml-2 mr-1 ">
+                                    Yes
+                                </a>
+                                (0)
+                            </p>
+                            <p className=" mr-4 text-gray-600">|</p>
+                            <p>
+                                <a href="#" className="underline text-gray-600 ">
+                                    Report
+                                </a>
+                            </p>
+                        </div>
                     </div>
-
                     <div className='line' >
                     </div>
                 </div>
             </div>
-            <StarChart />
 
-
-
-
-            <ButtonsComp />
 
 
         </div>

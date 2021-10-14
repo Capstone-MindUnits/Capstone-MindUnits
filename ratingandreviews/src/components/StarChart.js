@@ -4,12 +4,10 @@ import StarsRating from './StarsRating'
 function StarChart() {
     return (
         <div>
-
-            <p className="text-9xl w-1/4 mb-28">3</p>
+            {/* <p className="text-9xl w-1/4 mb-28npm start ">3</p>
             <div className="w-1/4" style={{ float: 'left', top: '372px', position: 'absolute' }}>
                 <div className="w-1/4" >
                     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
-
                     <ul className="flex ">
                         <li>
                             <i className="fas fa-star fa-sm text-black-500 mr-1"></i>
@@ -83,7 +81,7 @@ function StarChart() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }
