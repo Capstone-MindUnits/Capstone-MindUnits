@@ -5,15 +5,10 @@ import ReviewList from './components/ReviewList';
 import Header from './components/Header';
 import StarChart from './components/StarChart';
 import NumberStars from './components/NumberStars';
+import Characteristics from './components/Characteristics';
 
 
-{/* <div className="app pr-16 pl-16">
-  <div className="grid grid-cols-1 gap-4  w-3/5  mx-auto">
-    <Search />
-    <Qna />
-    <Buttons />
-  </div>
-</div> */}
+
 
 function App() {
   return (
@@ -28,7 +23,7 @@ function App() {
       <div className="..." style={{ height: '400px' }}>
         <StarChart />
         <div className="... mt-10" style={{ height: '555px' }}>
-          5
+          <Characteristics />
         </div>
       </div>
       <div className="col-span-2 ... mt-2 overscroll-y-contain">
