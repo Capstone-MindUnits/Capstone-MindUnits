@@ -9,13 +9,15 @@ import Characteristics from './components/Characteristics';
 import axios from 'axios';
 import config from './config/config';
 import $ from 'jquery'
+import ReviewAllList from './components/ReviewAllList'
 
 
 class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      reviews: []
+      reviews: [],
+      view: ''
 
     }
   }
@@ -33,10 +35,26 @@ class App extends React.Component {
     })
   }
 
+  changeView() {
+    this.setState({
+      view: 'allreview'
+    })
 
+  }
+  //a function to render all the reviews on click after changing the view 
+  renderView() {
+    if (this.state.view === '') {
+      return <ReviewList reviewData={this.state.reviews.results} />
+    }
+
+    if (this.state.view === 'allreview') {
+      return <ReviewAllList reviewData={this.state.reviews.results} />
+    }
+
+  }
 
   render() {
-    
+    console.log(this.state)
     return (
       <div className="grid grid-cols-3 gap-6  w-3/5  mx-auto text-gray-600 text-xs">
         <div className="...">
@@ -52,12 +70,11 @@ class App extends React.Component {
           </div>
         </div>
         <div className="col-span-2 ... mt-2 overscroll-y-contain">
-          <ReviewList 
-          
-          reviewData={this.state.reviews.results} />
+
+          {this.renderView()}
         </div>
         <div className="col-span-2 ... ml-60" >
-          <ButtonsComp />
+          <ButtonsComp changeView={this.changeView.bind(this)} />
         </div>
       </div >
     )

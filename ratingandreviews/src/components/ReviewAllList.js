@@ -1,13 +1,10 @@
 import React from 'react'
 import moment from 'moment'
 
-
-function ReviewList({ reviewData }) {
-    console.log('reviewData', reviewData)
-
+function ReviewAllList({ reviewData }) {
     return (
         <div className='grid gap-4 overflow-y-scroll' style={{ height: '600px' }}>
-            {reviewData && reviewData.slice(0, 2).map((review, key) => {
+            {reviewData && reviewData.map((review, key) => {
                 return (
                     <div key={key} className='grid gap-3' style={{ height: '290px' }}>
                         <div className='' >
@@ -38,6 +35,7 @@ function ReviewList({ reviewData }) {
                                     </p>
                                     <p>
                                         {moment(review.date).format('MMMM Do YYYY')}
+
                                     </p>
                                 </div>
                             </div>
@@ -96,4 +94,4 @@ function ReviewList({ reviewData }) {
     )
 }
 
-export default ReviewList
+export default ReviewAllList
