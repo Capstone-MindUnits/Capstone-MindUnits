@@ -56,7 +56,7 @@ class App extends React.Component {
   render() {
     console.log(this.state)
     return (
-      <div className="grid grid-cols-3 gap-6  w-3/5  mx-auto text-gray-600 text-xs">
+      <div className="grid grid-cols-3 gap-16  w-3/5  mx-auto text-gray-600 text-xs">
         <div className="...">
           <NumberStars />
         </div>
