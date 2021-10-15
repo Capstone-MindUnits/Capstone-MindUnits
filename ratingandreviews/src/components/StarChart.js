@@ -8,10 +8,10 @@ function StarChart() {
 
             <div className="... w-16 underline"> 5 stars</div>
             <div className="col-span-5 ... ">
-                <div className="relative pt-2.5">
-                    <div className="overflow-hidden h-2 text-xs flex ">
+                <div className="relative pt-2.5  w-64">
+                    <div style={{ width: '100%' }} className="overflow-hidden  h-2 text-xs flex bg-gray-200 ">
                         <div style={{ width: 150 }}
-                            className=" shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-gray-600">
+                            className=" shadow flex flex-col text-center whitespace-nowrap text-white justify-center bg-gray-600">
                         </div>
                     </div>
                 </div>
@@ -19,8 +19,8 @@ function StarChart() {
 
             <div className="... w-16 underline">4 stars</div>
             <div className="col-span-5 ...">
-                <div className="relative pt-2.5">
-                    <div className="overflow-hidden h-2 text-xs flex ">
+                <div className="relative pt-2.5  w-64">
+                    <div style={{ width: '100%' }} className="overflow-hidden h-2 text-xs flex bg-gray-200 ">
                         <div style={{ width: 80 }}
                             className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-gray-600">
                         </div>
@@ -30,8 +30,8 @@ function StarChart() {
 
             <div className="... w-16 underline">3 stars</div>
             <div className="col-span-5 ...">
-                <div className="relative pt-2.5">
-                    <div className="overflow-hidden h-2 text-xs flex ">
+                <div className="relative pt-2.5 w-64">
+                    <div className="overflow-hidden h-2 text-xs flex bg-gray-200">
                         <div style={{ width: 200 }}
                             className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-gray-600">
                         </div>
@@ -41,8 +41,8 @@ function StarChart() {
 
             <div className="... w-16 underline">2 stars</div>
             <div className="col-span-5 ...">
-                <div className="relative pt-2.5">
-                    <div className="overflow-hidden h-2 text-xs flex ">
+                <div className="relative pt-2.5  w-64">
+                    <div className="overflow-hidden h-2 text-xs flex bg-gray-200">
                         <div style={{ width: 150 }}
                             className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-gray-600">
                         </div>
@@ -52,8 +52,8 @@ function StarChart() {
 
             <div className="... w-16 underline">1 stars </div>
             <div className="col-span-5 ...">
-                <div className="relative pt-2.5">
-                    <div className="overflow-hidden h-2 text-xs flex ">
+                <div className="relative pt-2.5  w-64">
+                    <div className="overflow-hidden h-2 text-xs flex bg-gray-200">
                         <div style={{ width: 60 }}
                             className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-gray-600">
                         </div>
