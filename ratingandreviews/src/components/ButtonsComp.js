@@ -2,7 +2,7 @@ import React from 'react'
 
 function ButtonsComp() {
     return (
-        <div className='grid-row gap-3  ml-20  flex'>
+        <div className='grid-row gap-3  ml-40  flex'>
             <button className='truncate md:overflow-clip ... font-semibold py-4 px-3 border border-black '>MORE REVIEWS</button>
             <button className='flex truncate md:overflow-clip ... font-semibold py-4 px-6  border border-black  inline-block '>
                 <p>ADD A REVIEW</p>

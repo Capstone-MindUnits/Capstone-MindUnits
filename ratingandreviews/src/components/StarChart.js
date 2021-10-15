@@ -43,7 +43,7 @@ function StarChart() {
             <div className="col-span-5 ...">
                 <div className="relative pt-2.5">
                     <div className="overflow-hidden h-2 text-xs flex ">
-                        <div style={{ width: 120 }}
+                        <div style={{ width: 150 }}
                             className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-gray-600">
                         </div>
                     </div>
