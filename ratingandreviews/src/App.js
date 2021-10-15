@@ -7,7 +7,7 @@ import StarChart from './components/StarChart';
 import NumberStars from './components/NumberStars';
 import Characteristics from './components/Characteristics';
 import axios from 'axios';
-import config from './config';
+// import config from './config';
 
 
 class App extends React.Component {
