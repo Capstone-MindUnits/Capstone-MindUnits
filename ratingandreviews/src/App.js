@@ -7,38 +7,36 @@ import StarChart from './components/StarChart';
 import NumberStars from './components/NumberStars';
 import Characteristics from './components/Characteristics';
 import axios from 'axios';
-// import config from './config';
+import config from './config/config';
+import $ from 'jquery'
 
 
 class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      data: []
+      reviews: []
 
     }
   }
 
 
   componentDidMount() {
-    // let options = {
-    //   url: `https://app-hrsei-api.herokuapp.com/api/fec2/hr-rfp/products`,
-
-    //   headers: {
-    //     'Authorization': `${config.TOKEN}`
-    //   }
-    // };
-
     axios.get('https://app-hrsei-api.herokuapp.com/api/fec2/hr-rfp/reviews/?product_id=40344', {
       headers: {
-        authorization: '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'
+        authorization: `${config.TOKEN}`
       }
-    })
-      .then((data) => {
-        console.log(data.data)
+    }).then((data) => {
+      this.setState({
+        reviews: data.data
       })
+    })
   }
+
+
+
   render() {
+    
     return (
       <div className="grid grid-cols-3 gap-6  w-3/5  mx-auto text-gray-600 text-xs">
         <div className="...">
@@ -54,7 +52,9 @@ class App extends React.Component {
           </div>
         </div>
         <div className="col-span-2 ... mt-2 overscroll-y-contain">
-          <ReviewList  />
+          <ReviewList 
+          
+          reviewData={this.state.reviews.results} />
         </div>
         <div className="col-span-2 ... ml-60" >
           <ButtonsComp />
