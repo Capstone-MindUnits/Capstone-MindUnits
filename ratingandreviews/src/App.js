@@ -8,8 +8,6 @@ import NumberStars from './components/NumberStars';
 import Characteristics from './components/Characteristics';
 import axios from 'axios';
 import config from './config/config';
-import $ from 'jquery'
-import ReviewAllList from './components/ReviewAllList'
 
 
 class App extends React.Component {
@@ -17,14 +15,14 @@ class App extends React.Component {
     super();
     this.state = {
       reviews: [],
-      view: ''
+      reviewsView: 2
 
     }
   }
 
 
   componentDidMount() {
-    axios.get('https://app-hrsei-api.herokuapp.com/api/fec2/hr-rfp/reviews/?product_id=40344', {
+    axios.get('https://app-hrsei-api.herokuapp.com/api/fec2/hr-rfp/reviews/?product_id=40393', {
       headers: {
         authorization: `${config.TOKEN}`
       }
@@ -35,21 +33,14 @@ class App extends React.Component {
     })
   }
 
-  changeView() {
+
+  //a function to render all the reviews on click after changing the view 
+  moreReviews() {
+
     this.setState({
-      view: 'allreview'
+      reviewsView: this.state.reviews.length
     })
 
-  }
-  //a function to render all the reviews on click after changing the view 
-  renderView() {
-    if (this.state.view === '') {
-      return <ReviewList reviewData={this.state.reviews.results} />
-    }
-
-    if (this.state.view === 'allreview') {
-      return <ReviewAllList reviewData={this.state.reviews.results} />
-    }
 
   }
 
@@ -69,12 +60,11 @@ class App extends React.Component {
             <Characteristics />
           </div>
         </div>
-        <div className="col-span-2 ... mt-2 overscroll-y-contain">
-
-          {this.renderView()}
+        <div className="col-span-2 ... mt-2 ">
+          <ReviewList reviewsView={this.state.reviewsView} reviewData={this.state.reviews.results} />
         </div>
         <div className="col-span-2 ... ml-60" >
-          <ButtonsComp changeView={this.changeView.bind(this)} />
+          <ButtonsComp moreReviews={this.moreReviews.bind(this)} />
         </div>
       </div >
     )

@@ -1,10 +1,10 @@
 import React from 'react'
 import Popup from 'reactjs-popup';
 
-function ButtonsComp({ changeView }) {
+function ButtonsComp({ moreReviews }) {
     return (
         <div className='grid-row gap-3  ml-40  flex'>
-            <button onClick={() => changeView()} className='truncate md:overflow-clip ... font-semibold py-4 px-3 border border-black '>MORE REVIEWS</button>
+            <button onClick={() => moreReviews()} className='truncate md:overflow-clip ... font-semibold py-4 px-3 border border-black '>MORE REVIEWS</button>
             <button className='flex truncate md:overflow-clip ... font-semibold py-4 px-6  border border-black  inline-block '>
                 <p>ADD A REVIEW</p>
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">

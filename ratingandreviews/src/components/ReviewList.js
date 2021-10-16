@@ -2,33 +2,36 @@ import React from 'react'
 import moment from 'moment'
 
 
-function ReviewList({ reviewData }) {
+function ReviewList({ reviewData, reviewsView }) {
     console.log('reviewData', reviewData)
-
+    const starsArray = new Array(5)
+    starsArray.fill(6)
     return (
-        <div className='grid gap-4 overflow-y-scroll' style={{ height: '600px' }}>
-            {reviewData && reviewData.slice(0, 2).map((review, key) => {
+        <div className='grid gap-4 overflow-y-auto' style={{ height: '600px' }}>
+            {reviewData && reviewData.slice(0, reviewsView).map((review, key) => {
                 return (
                     <div key={key} className='grid gap-3' style={{ height: '290px' }}>
                         <div className='' >
+
                             <div className='flex justify-between'>
                                 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
                                 <ul className="flex">
-                                    <li>
-                                        <i className="fas fa-star fa-sm text-black-500 mr-1"></i>
-                                    </li>
-                                    <li>
-                                        <i className="fas fa-star fa-sm text-black-500 mr-1"></i>
-                                    </li>
-                                    <li>
-                                        <i className="fas fa-star fa-sm text-black-500 mr-1"></i>
-                                    </li>
-                                    <li>
-                                        <i className="fas fa-star fa-sm text-black-500 mr-1"></i>
-                                    </li>
-                                    <li>
-                                        <i className="far fa-star fa-sm text-black-500 mr-1"></i>
-                                    </li>
+                                    {console.log(starsArray)}
+                                    {starsArray.map((_, index) => {
+                                        // ternary operators to render conditionally 
+                                        { console.log(review.rating) }
+                                        return (index < review.rating ?
+                                            <li>
+                                                <i className="fas fa-star fa-sm text-black-500 mr-1"> </i>
+                                            </li>
+                                            :
+                                            <li>
+                                                <i className="far fa-star fa-sm text-black-500 mr-1"> </i>
+                                            </li>
+
+                                        )
+                                    })}
+
                                 </ul>
                                 <div className='flex'>
                                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -60,7 +63,7 @@ function ReviewList({ reviewData }) {
                             </p>
                         }
                         {review.response &&
-                            <div className=''>
+                            <div className='bg-gray-400'>
                                 <p className=' font-bold'>
                                     Response:
                                 </p>
