@@ -63,7 +63,7 @@ class App extends React.Component {
           <Header reviewData={this.state.reviews.results}/>
         </div>
         <div className="..." style={{ height: '400px' }}>
-          <StarChart />
+          <StarChart reviewData={this.state.reviews.results}/>
           <div className="... mt-10" style={{ height: '555px' }}>
             <Characteristics />
           </div>
