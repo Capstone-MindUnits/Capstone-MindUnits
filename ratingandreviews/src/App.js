@@ -8,6 +8,7 @@ import NumberStars from './components/NumberStars';
 import Characteristics from './components/Characteristics';
 import axios from 'axios';
 import config from './config/config';
+import AddReviewButton from './components/AddReviewButton'
 
 
 class App extends React.Component {
@@ -15,8 +16,11 @@ class App extends React.Component {
     super();
     this.state = {
       reviews: [],
-      reviewsView: 2
-
+      reviewsView: 2,
+      reviewButton: true,
+      sortedByDate: false,
+      sortedByHelpfullness: false,
+      sortedByRelevance: true
     }
   }
 
@@ -36,23 +40,27 @@ class App extends React.Component {
 
   //a function to render all the reviews on click after changing the view 
   moreReviews() {
-
     this.setState({
-      reviewsView: this.state.reviews.length
+      reviewsView: this.state.reviews.length,
     })
-
-
   }
 
+  hideButtonFunction() {
+    this.setState({
+      reviewButton: false
+    })
+  }
+
+
+
   render() {
-    console.log(this.state)
     return (
       <div className="grid grid-cols-3 gap-16  w-3/5  mx-auto text-gray-600 text-xs">
         <div className="...">
-          <NumberStars />
+          <NumberStars reviewData={this.state.reviews.results}/>
         </div>
         <div className="col-span-2 ...">
-          <Header />
+          <Header reviewData={this.state.reviews.results}/>
         </div>
         <div className="..." style={{ height: '400px' }}>
           <StarChart />
@@ -65,6 +73,9 @@ class App extends React.Component {
         </div>
         <div className="col-span-2 ... ml-60" >
           <ButtonsComp moreReviews={this.moreReviews.bind(this)} />
+        </div>
+        <div className="...">
+          <AddReviewButton />
         </div>
       </div >
     )

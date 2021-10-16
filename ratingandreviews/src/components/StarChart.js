@@ -1,5 +1,4 @@
 import React from 'react'
-import StarsRating from './StarsRating'
 
 function StarChart() {
     return (

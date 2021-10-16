@@ -5,9 +5,8 @@ module.exports = {
     extend: {},
   },
   variants: {
+    animation: ['responsive', 'motion-safe', 'motion-reduce'],
     extend: {
-      overflow: ['hover', 'focus'],
-      overscrollBehavior: ['hover', 'focus']
     },
   },
   plugins: [],
