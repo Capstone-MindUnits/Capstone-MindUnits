@@ -84,7 +84,7 @@ function ReviewList({ reviewData, reviewsView }) {
                                         <a href="#" className="underline ml-2 mr-1 ">
                                             Yes
                                         </a>
-                                        (0)
+                                        ({review.helpfulness})
                                     </p>
                                     <p className=" mr-4 text-gray-600 flex">|</p>
                                     <p style={{ height: '15px' }}>

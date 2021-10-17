@@ -8,7 +8,6 @@ import NumberStars from './components/NumberStars';
 import Characteristics from './components/Characteristics';
 import axios from 'axios';
 import config from './config/config';
-import AddReviewButton from './components/AddReviewButton'
 
 
 class App extends React.Component {
@@ -74,9 +73,7 @@ class App extends React.Component {
         <div className="col-span-2 ... ml-60" >
           <ButtonsComp moreReviews={this.moreReviews.bind(this)} />
         </div>
-        <div className="...">
-          <AddReviewButton />
-        </div>
+
       </div >
     )
   }

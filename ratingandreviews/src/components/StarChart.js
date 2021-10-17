@@ -1,9 +1,6 @@
 import React from 'react'
 
 function StarChart({ reviewData }) {
-
-
-
     if (!reviewData) {
         return (
             <div><h1>Loading</h1></div>
