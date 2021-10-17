@@ -12,7 +12,7 @@ function Characteristics() {
                 </div>
                 <div className='w-80 flex gap-4'>
                     <div className="overflow-hidden h-2 mb-4 text-xs flex  bg-gray-200 w-20">
-                        <div style={{ width: "0%" }} className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-gray-600">
+                        <div style={{ width: "100%" }} className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-gray-600">
                         </div>
                     </div>
                     <div className="overflow-hidden h-2 mb-4 text-xs flex  bg-gray-200 w-20">
@@ -39,7 +39,7 @@ function Characteristics() {
                         </div>
                     </div>
                     <div className="overflow-hidden h-2 mb-4 text-xs flex  bg-gray-200 w-20">
-                        <div style={{ width: "0%" }} className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-gray-600">
+                        <div style={{ width: "100%" }} className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-gray-600">
                         </div>
                     </div>
                     <div className="overflow-hidden h-2 mb-4 text-xs flex  bg-gray-200 w-20">
@@ -66,7 +66,7 @@ function Characteristics() {
                         </div>
                     </div>
                     <div className="overflow-hidden h-2 mb-4 text-xs flex  bg-gray-200 w-20">
-                        <div style={{ width: "0%" }} className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-gray-600">
+                        <div style={{ width: "100%" }} className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-gray-600">
                         </div>
                     </div>
                 </div>
@@ -89,7 +89,7 @@ function Characteristics() {
                         </div>
                     </div>
                     <div className="overflow-hidden h-2 mb-4 text-xs flex  bg-gray-200 w-20">
-                        <div style={{ width: "0%" }} className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-gray-600">
+                        <div style={{ width: "100%" }} className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-gray-600">
                         </div>
                     </div>
                 </div>

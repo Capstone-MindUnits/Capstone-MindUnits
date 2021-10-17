@@ -59,7 +59,7 @@ function ReviewList({ reviewData, reviewsView }) {
                                     </p>
                                 </div>
                                 <div>
-                                    <p>{review.body}</p>S
+                                    <p>{review.body}</p>
                                 </div>
                                 {review.recommend &&
                                     <p className='flex '>

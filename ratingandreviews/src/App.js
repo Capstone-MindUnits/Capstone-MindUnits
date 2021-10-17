@@ -40,7 +40,7 @@ class App extends React.Component {
   //a function to render all the reviews on click after changing the view 
   moreReviews() {
     this.setState({
-      reviewsView: this.state.reviews.length,
+      reviewsView: this.state.reviewsView + 2,
     })
   }
 
@@ -71,9 +71,8 @@ class App extends React.Component {
           <ReviewList reviewsView={this.state.reviewsView} reviewData={this.state.reviews.results} />
         </div>
         <div className="col-span-2 ... ml-60" >
-          <ButtonsComp moreReviews={this.moreReviews.bind(this)} />
+          <ButtonsComp reviewData={this.state.reviews.results} moreReviews={this.moreReviews.bind(this)} />
         </div>
-
       </div >
     )
   }
